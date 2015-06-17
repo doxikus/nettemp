@@ -77,7 +77,7 @@ case 'espupload': include('modules/sensors/wireless/espupload/espupload.php'); b
 
 </div>
 
-	<div id="footer"><center><table><tr><td>Donate for developing</td><td> <?php include('modules/info/paypal.php'); ?></td><td>v <?php passthru("awk '/Changelog/{y=1;next}y' readme.md |head -2 |grep -v '^$' && /usr/bin/git branch |grep [*]|awk '{print $2}';"); ?></td><td>| System time <?php $today=date("H:i:s"); echo $today;?></td></tr></table></center>
+	<div id="footer"><center><table><tr><td>Donate for developing</td><td> <?php include('modules/info/paypal.php'); ?></td><td>v <?php passthru("awk '/Changelog/{y=1;next}y' readme.md |head -2 |grep -v '^$' && /usr/bin/git branch |grep [*]|awk '{print $2}';"); ?></td><td>| System time <?php passthru("date +%H:%M:%S");?></td></tr></table></center>
 </div>
 </div>
 
